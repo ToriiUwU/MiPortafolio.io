@@ -1,0 +1,237 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: rgb(0,60,106);
+    background: linear-gradient(90deg, rgba(0,60,106,1) 0%, rgba(0,119,159,1) 100%);
+}
+#logo {
+    position: absolute; /* Posiciona el logo */
+    top: 0; /* Coloca el logo en la parte superior */
+    left: 50%; /* Coloca el logo en el centro horizontal */
+    transform: translateX(-50%); /* Centra el logo horizontalmente */
+    z-index: 1; /* Asegura que el logo esté sobre el texto */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#logo img {
+    max-width: 800px; /* Ajusta el tamaño máximo del logo */
+}
+
+/* Estilos para la sección de inicio */
+#inicio {
+    position: relative;
+    color: #ffffff;
+    padding-top: 80px; /* Espaciado interno */
+    text-align: center; /* Alineación del texto al centro */
+    background-image: url('resources/7754273.jpg');
+    background-size: cover; /* Ajusta la imagen al tamaño de la sección */
+    background-position: center; /* Centra la imagen */
+    height: 100vh; /* Establece la altura de la sección */
+    display: flex;
+    flex-direction: column; /* Ajusta el contenido en columna */
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 0px 10px rgba(0, 0, 0, 0.979);
+}
+
+
+.presentation {
+    max-width: 800px; /* Ancho máximo del contenido */
+    margin: 0 auto; /* Centrar horizontalmente */
+}
+
+.presentation h1 {
+    font-size: 6.5em; /* Tamaño de la fuente del título */
+}
+
+.presentation p {
+    font-size: 1.2em; /* Tamaño de la fuente del párrafo */
+    color: #ffffff; /* Color del texto */
+}
+
+.presentation .btn {
+    display: inline-block; /* Mostrar como bloque en línea */
+    padding: 20px 30px; /* Espaciado interno */
+    background-color: #b35b13; /* Color de fondo del botón */
+    color: #fff; /* Color del texto */
+    text-decoration: none; /* Quitar subrayado del enlace */
+    border-radius: 5px; /* Borde redondeado */
+    transition: background-color 0.3s ease; /* Transición suave */
+    transition: transform 0.3s ease; /* Transición suave */
+}
+
+.presentation .btn:hover {
+    background-color: #7a3b00; /* Color de fondo al pasar el mouse */
+    transform: scale(1.5);
+}
+
+#presentacion{
+    position: relative;
+    color: #ffffff;
+    padding-top: 0px; /* Espaciado interno */
+    text-align: center; /* Alineación del texto al centro */
+    background-image: url('resources/2308-w030-n003-794B-p15-794.jpg');
+    background-size: cover; /* Ajusta la imagen al tamaño de la sección */
+    background-position: center; /* Centra la imagen */
+    height: 100vh; /* Establece la altura de la sección */
+    display: flex;
+    flex-direction: column; /* Ajusta el contenido en columna */
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 0px 10px rgba(0, 0, 0, 0.979);
+
+}
+.about {
+    display: flex;
+    flex-direction: row; /* Cambio de dirección en dispositivos móviles */
+    align-items: center; /* Centra los elementos verticalmente */
+    margin-top: 50px;
+    font-size: 2em;
+}
+
+.about img {
+    width: 50%; /* La imagen ocupa el 50% del contenedor */
+    max-width: 400px; /* Máximo ancho para evitar desbordamiento en dispositivos grandes */
+    height: auto; /* Altura automática para mantener la proporción */
+    padding: 30px;
+}
+
+.about .bio {
+    width: 50%; /* El texto ocupa el 50% del contenedor */
+    padding: 30px; /* Espaciado */
+    color: #fdfcfc;
+}
+
+.about .btn {
+    display: inline-block; /* Mostrar como bloque en línea */
+    padding: 20px 30px; /* Espaciado interno */
+    background-color: #b35b13; /* Color de fondo del botón */
+    color: #fff; /* Color del texto */
+    text-decoration: none; /* Quitar subrayado del enlace */
+    border-radius: 5px; /* Borde redondeado */
+    transition: background-color 0.3s ease; /* Transición suave */
+    transition: transform 0.3s ease; /* Transición suave */
+}
+
+.about .btn:hover {
+    background-color: #7a3b00; /* Color de fondo al pasar el mouse */
+    transform: scale(1.5);
+}
+
+h2 {
+    padding: 10px;
+    color: #ffffff;
+    text-shadow: 2px 0px 10px rgba(0, 0, 0, 0.979);
+}
+.gallery {
+    display: flex; /* Usamos flexbox en lugar de grid */
+    flex-wrap: wrap; /* Permitimos que los elementos se envuelvan cuando no quepan en una línea */
+    justify-content: center; /* Centramos los elementos horizontalmente */
+    gap: 20px; /* Espaciado entre las imágenes */
+    max-width: 1800px; /* Establece un ancho máximo para la galería */
+    margin: 0 auto; /* Centra la galería horizontalmente */
+}
+
+.gallery .image {
+    position: relative;
+    flex: 0 0 340px; /* Hacemos que las imágenes tengan un ancho mínimo de 250px y ocupen el espacio disponible */
+    overflow: hidden;
+    transition: transform 0.5s ease; /* Cambiamos la transición a 'transform' para el efecto de escala */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.gallery .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.gallery .image:hover {
+    transform: scale(1.05); /* Reducimos el valor de escala en comparación con el original */
+}
+
+.gallery .image .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery .image:hover .overlay {
+    opacity: 1;
+}
+
+.gallery .image .overlay h3 {
+    margin-bottom: 5px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+}
+
+.gallery .image .overlay .btn {
+    background-color: #00ff88;
+    color: #000000;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.gallery .image .overlay p {
+    color: #000000;
+    padding: 0px 20px;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9em;
+}
+
+
+.services {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 10px 20px; /* Ajuste de padding para dispositivos móviles */
+}
+
+.services .service {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #202020;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 5px;
+}
+
+#productos{
+    position: relative;
+    padding-top: 50px; /* Espaciado interno */
+    text-align: center; /* Alineación del texto al centro */
+    background-image: url('resources/image5.jpg');
+    background-size: cover; /* Ajusta la imagen al tamaño de la sección */
+    background-position: center; /* Centra la imagen */
+    height: 100vh; /* Establece la altura de la sección */
+    display: flex;
+    flex-direction: column; /* Ajusta el contenido en columna */
+    justify-content: center;
+    align-items: center;
+}
