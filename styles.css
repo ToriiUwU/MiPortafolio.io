@@ -17,7 +17,7 @@ body {
 }
 
 #logo img {
-    max-width: 800px; /* Ajusta el tamaño máximo del logo */
+    max-width: 80%; /* Ajusta el tamaño máximo del logo */
 }
 
 /* Estilos para la sección de inicio */
@@ -93,8 +93,8 @@ body {
 }
 
 .about img {
-    width: 50%; /* La imagen ocupa el 50% del contenedor */
-    max-width: 400px; /* Máximo ancho para evitar desbordamiento en dispositivos grandes */
+    width: 40%; /* La imagen ocupa el 50% del contenedor */
+    max-width: 100%; /* Máximo ancho para evitar desbordamiento en dispositivos grandes */
     height: auto; /* Altura automática para mantener la proporción */
     padding: 30px;
 }
